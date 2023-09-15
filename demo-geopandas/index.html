@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_dd78716584c63811534599b1b161afec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_dd78716584c63811534599b1b161afec" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_dd78716584c63811534599b1b161afec = L.map(
+                "map_dd78716584c63811534599b1b161afec",
+                {
+                    center: [62.778323, 22.848453],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_dd78716584c63811534599b1b161afec);
+
+            
+
+        
+    
+            var tile_layer_11730f0fad9cdbf56a81d80799232bb9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var marker_4701946478bdfe8fb286007c93caeccd = L.marker(
+                [62.752751950000004, 22.86589491792418],
+                {}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var icon_d008f22675320e4ad5aeeaec4bc9c1bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4701946478bdfe8fb286007c93caeccd.setIcon(icon_d008f22675320e4ad5aeeaec4bc9c1bc);
+        
+    
+        var popup_39832c8f4cf43d406a9134caefe9b9eb = L.popup({"maxWidth": 200, "minWidth": 200});
+
+        
+            
+                var i_frame_50db2ed4a2a224090c003487b38193cf = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBBQkMsIFJ1dWtpbnRpZSAxNzc8YnI+PGJyPjk1RTEwOiZuYnNwOzIuMTA2PGJyPjk4RTomZW1zcDsmbmJzcDsyLjI8YnI+RGk6JmVtc3A7JmVuc3A7Jm5ic3A7Mi4xNDg=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_39832c8f4cf43d406a9134caefe9b9eb.setContent(i_frame_50db2ed4a2a224090c003487b38193cf);
+            
+        
+
+        marker_4701946478bdfe8fb286007c93caeccd.bindPopup(popup_39832c8f4cf43d406a9134caefe9b9eb)
+        ;
+
+        
+    
+    
+            marker_4701946478bdfe8fb286007c93caeccd.bindTooltip(
+                `<div>
+                     <b>ABC</b> Ruukintie 177, 60200 Seinäjoki, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b3c66376745746614dbb714889107ab0 = L.marker(
+                [62.8059193, 22.8799628],
+                {}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var icon_8ef8e7f2b64a1f9facc116f6cb7e8a9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b3c66376745746614dbb714889107ab0.setIcon(icon_8ef8e7f2b64a1f9facc116f6cb7e8a9b);
+        
+    
+        var popup_ff768c7f1fbdf97888bd75a4535f1030 = L.popup({"maxWidth": 200, "minWidth": 200});
+
+        
+            
+                var i_frame_a02de5c18644759fd759075d9e52bf8a = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBTdDEsIEh5bGx5a2FsbGlvbnRpZSAxPGJyPjxicj45NUUxMDombmJzcDsyLjE0OTxicj45OEU6JmVtc3A7Jm5ic3A7Mi4yMTk8YnI+RGk6JmVtc3A7JmVuc3A7Jm5ic3A7Mi4zNzk=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_ff768c7f1fbdf97888bd75a4535f1030.setContent(i_frame_a02de5c18644759fd759075d9e52bf8a);
+            
+        
+
+        marker_b3c66376745746614dbb714889107ab0.bindPopup(popup_ff768c7f1fbdf97888bd75a4535f1030)
+        ;
+
+        
+    
+    
+            marker_b3c66376745746614dbb714889107ab0.bindTooltip(
+                `<div>
+                     <b>St1</b> Hyllykalliontie 1, 60510 Seinäjoki, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f876f6dac866103211b78bc9e740d7fd = L.marker(
+                [62.7867049, 22.834748],
+                {}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var icon_a99f0d798337d21ce5c133a17ef43684 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f876f6dac866103211b78bc9e740d7fd.setIcon(icon_a99f0d798337d21ce5c133a17ef43684);
+        
+    
+        var popup_bac541d2d85db2f117821b33f927c31f = L.popup({"maxWidth": 200, "minWidth": 200});
+
+        
+            
+                var i_frame_7c7e179731d40484bf217746a112926a = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBOZXN0ZSwgVmFwYXVkZW50aWUgNzM8YnI+PGJyPjk1RTEwOiZuYnNwOzIuMTE5PGJyPjk4RTomZW1zcDsmbmJzcDsyLjIxOTxicj5EaTomZW1zcDsmZW5zcDsmbmJzcDsyLjI0OQ==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_bac541d2d85db2f117821b33f927c31f.setContent(i_frame_7c7e179731d40484bf217746a112926a);
+            
+        
+
+        marker_f876f6dac866103211b78bc9e740d7fd.bindPopup(popup_bac541d2d85db2f117821b33f927c31f)
+        ;
+
+        
+    
+    
+            marker_f876f6dac866103211b78bc9e740d7fd.bindTooltip(
+                `<div>
+                     <b>Neste</b> Vapaudentie 73, 60100 Seinäjoki, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d8a1b8b72e6a481d7599bfb090961998 = L.marker(
+                [62.7938887, 22.8383532],
+                {}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var icon_6b3f697edd369df93f57fa0b58301e9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d8a1b8b72e6a481d7599bfb090961998.setIcon(icon_6b3f697edd369df93f57fa0b58301e9b);
+        
+    
+        var popup_9abdc61d2dba57a43c35a0786aacc1f1 = L.popup({"maxWidth": 200, "minWidth": 200});
+
+        
+            
+                var i_frame_0ac61e73574172d5547c1e3e115ae051 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBTaGVsbCwgVmFsdGlvbmthdHUgNzxicj48YnI+OTVFMTA6Jm5ic3A7Mi4xMjE8YnI+OThFOiZlbXNwOyZuYnNwOzIuMjMxPGJyPkRpOiZlbXNwOyZlbnNwOyZuYnNwOzIuMTU2" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_9abdc61d2dba57a43c35a0786aacc1f1.setContent(i_frame_0ac61e73574172d5547c1e3e115ae051);
+            
+        
+
+        marker_d8a1b8b72e6a481d7599bfb090961998.bindPopup(popup_9abdc61d2dba57a43c35a0786aacc1f1)
+        ;
+
+        
+    
+    
+            marker_d8a1b8b72e6a481d7599bfb090961998.bindTooltip(
+                `<div>
+                     <b>Shell</b> Valtionkatu 7, 60100 Seinäjoki, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04d8fd4e3bb60cd3cc06e981e210cd71 = L.marker(
+                [62.7948689, 22.8321827],
+                {}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var icon_d1a7a9f156990ea49efab580c9f879e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_04d8fd4e3bb60cd3cc06e981e210cd71.setIcon(icon_d1a7a9f156990ea49efab580c9f879e8);
+        
+    
+        var popup_b3ec3c172e75c76df5805432e16821ef = L.popup({"maxWidth": 200, "minWidth": 200});
+
+        
+            
+                var i_frame_9df20b66e6c9c5d763a68b0c1335abd6 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBBQkMsIFZlcmthdGVodGFhbmthdHUgMTM8YnI+PGJyPjk1RTEwOiZuYnNwOzIuMTA4PGJyPjk4RTomZW1zcDsmbmJzcDsyLjIwNzxicj5EaTomZW1zcDsmZW5zcDsmbmJzcDsyLjE4Mw==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_b3ec3c172e75c76df5805432e16821ef.setContent(i_frame_9df20b66e6c9c5d763a68b0c1335abd6);
+            
+        
+
+        marker_04d8fd4e3bb60cd3cc06e981e210cd71.bindPopup(popup_b3ec3c172e75c76df5805432e16821ef)
+        ;
+
+        
+    
+    
+            marker_04d8fd4e3bb60cd3cc06e981e210cd71.bindTooltip(
+                `<div>
+                     <b>ABC</b> Verkatehtaankatu 13, 60100 Seinäjoki, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_05dbd1ae7ab4aefe222dbd8ebad6d4ad = L.marker(
+                [62.7867049, 22.834748],
+                {}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var icon_d4511de80b089ae7d7234f132128d675 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_05dbd1ae7ab4aefe222dbd8ebad6d4ad.setIcon(icon_d4511de80b089ae7d7234f132128d675);
+        
+    
+        var popup_180462990ce41f81a8d7ddf1cfa10d0f = L.popup({"maxWidth": 200, "minWidth": 200});
+
+        
+            
+                var i_frame_e05973b30cb3514fb7f49d1579fa496f = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBOZXN0ZSwgVmFwYXVkZW50aWUgMjU8YnI+PGJyPjk1RTEwOiZuYnNwOzIuMTM0PGJyPjk4RTomZW1zcDsmbmJzcDsyLjIzNDxicj5EaTomZW1zcDsmZW5zcDsmbmJzcDsyLjI2OQ==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_180462990ce41f81a8d7ddf1cfa10d0f.setContent(i_frame_e05973b30cb3514fb7f49d1579fa496f);
+            
+        
+
+        marker_05dbd1ae7ab4aefe222dbd8ebad6d4ad.bindPopup(popup_180462990ce41f81a8d7ddf1cfa10d0f)
+        ;
+
+        
+    
+    
+            marker_05dbd1ae7ab4aefe222dbd8ebad6d4ad.bindTooltip(
+                `<div>
+                     <b>Neste</b> Vapaudentie 25, 60100 Seinäjoki, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89865819469b62209ef52a5ef90f52ff = L.marker(
+                [62.7708906, 22.87840759069655],
+                {}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var icon_e552b00d41c8bc0f2f0dc675d696ac5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_89865819469b62209ef52a5ef90f52ff.setIcon(icon_e552b00d41c8bc0f2f0dc675d696ac5f);
+        
+    
+        var popup_72eb111c9fec49703db059f120eb11b2 = L.popup({"maxWidth": 200, "minWidth": 200});
+
+        
+            
+                var i_frame_68a4df9c931e35b75ba9ab44f9bc6827 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBOZXN0ZSwgS2FzcGVyaW52aWl0YSAxNTxicj48YnI+OTVFMTA6Jm5ic3A7Mi4xMTQ8YnI+OThFOiZlbXNwOyZuYnNwOzIuMjA0PGJyPkRpOiZlbXNwOyZlbnNwOyZuYnNwOzIuMjQ0" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_72eb111c9fec49703db059f120eb11b2.setContent(i_frame_68a4df9c931e35b75ba9ab44f9bc6827);
+            
+        
+
+        marker_89865819469b62209ef52a5ef90f52ff.bindPopup(popup_72eb111c9fec49703db059f120eb11b2)
+        ;
+
+        
+    
+    
+            marker_89865819469b62209ef52a5ef90f52ff.bindTooltip(
+                `<div>
+                     <b>Neste</b> Kasperinviita 15, 60150 Seinäjoki, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ac409c8ce40911421a405290f3730eba = L.marker(
+                [62.7730838, 22.8780571],
+                {}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var icon_74dfda2e4bf6d568de17a6c3ad556f22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ac409c8ce40911421a405290f3730eba.setIcon(icon_74dfda2e4bf6d568de17a6c3ad556f22);
+        
+    
+        var popup_ad293912d72ffaca8a9c5d69f892c671 = L.popup({"maxWidth": 200, "minWidth": 200});
+
+        
+            
+                var i_frame_f726b7f5752b3cacadbf7ee0bf4962fa = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBTdDEsIFRhcGlvbGFudGllIDEwPGJyPjxicj45NUUxMDombmJzcDsyLjExNDxicj45OEU6JmVtc3A7Jm5ic3A7Mi4yMDQ8YnI+RGk6JmVtc3A7JmVuc3A7Jm5ic3A7Mi4yNDQ=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_ad293912d72ffaca8a9c5d69f892c671.setContent(i_frame_f726b7f5752b3cacadbf7ee0bf4962fa);
+            
+        
+
+        marker_ac409c8ce40911421a405290f3730eba.bindPopup(popup_ad293912d72ffaca8a9c5d69f892c671)
+        ;
+
+        
+    
+    
+            marker_ac409c8ce40911421a405290f3730eba.bindTooltip(
+                `<div>
+                     <b>St1</b> Tapiolantie 10, 60150 Seinäjoki, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95961322ab772f3ccc69d34b063289a3 = L.marker(
+                [62.78623555, 22.807426358885493],
+                {}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var icon_79e23358d3c7d150c7d386c757599f1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_95961322ab772f3ccc69d34b063289a3.setIcon(icon_79e23358d3c7d150c7d386c757599f1f);
+        
+    
+        var popup_548c45c5e0332022ca54bb6ff4a707f0 = L.popup({"maxWidth": 200, "minWidth": 200});
+
+        
+            
+                var i_frame_c86b30193ea1d23bc7a138e2fa4b56f5 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBBQkMsIEt5dMO2cG9sa3UgMjxicj48YnI+OTVFMTA6Jm5ic3A7Mi4xNDk8YnI+OThFOiZlbXNwOyZuYnNwOzIuMjQ5PGJyPkRpOiZlbXNwOyZlbnNwOyZuYnNwOzIuMjg5" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_548c45c5e0332022ca54bb6ff4a707f0.setContent(i_frame_c86b30193ea1d23bc7a138e2fa4b56f5);
+            
+        
+
+        marker_95961322ab772f3ccc69d34b063289a3.bindPopup(popup_548c45c5e0332022ca54bb6ff4a707f0)
+        ;
+
+        
+    
+    
+            marker_95961322ab772f3ccc69d34b063289a3.bindTooltip(
+                `<div>
+                     <b>ABC</b> Kytöpolku 2, 60320 Seinäjoki, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_648fb7c8553afcb3f8d97ef67a871ec9 = L.marker(
+                [62.7510251, 22.8241763],
+                {}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var icon_0d749f236ad5a9b9db9c1ebcdd5def08 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_648fb7c8553afcb3f8d97ef67a871ec9.setIcon(icon_0d749f236ad5a9b9db9c1ebcdd5def08);
+        
+    
+        var popup_763391b1f060bc9dde365ee6b040ec75 = L.popup({"maxWidth": 200, "minWidth": 200});
+
+        
+            
+                var i_frame_03190978e1dd35d9a1141cc5d97726f8 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBBQkMsIEJ1bGxlcmludGllIDI8YnI+PGJyPjk1RTEwOiZuYnNwOzIuMTQ5PGJyPjk4RTomZW1zcDsmbmJzcDsyLjI0OTxicj5EaTomZW1zcDsmZW5zcDsmbmJzcDsyLjI4OQ==" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_763391b1f060bc9dde365ee6b040ec75.setContent(i_frame_03190978e1dd35d9a1141cc5d97726f8);
+            
+        
+
+        marker_648fb7c8553afcb3f8d97ef67a871ec9.bindPopup(popup_763391b1f060bc9dde365ee6b040ec75)
+        ;
+
+        
+    
+    
+            marker_648fb7c8553afcb3f8d97ef67a871ec9.bindTooltip(
+                `<div>
+                     <b>ABC</b> Bullerintie 2, 60200 Seinäjoki, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a523b6d0ec30f85a57962b68959a452 = L.marker(
+                [62.77630415, 22.850753175357255],
+                {}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var icon_c8384a7db7fa966acfccd82902fe84f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_5a523b6d0ec30f85a57962b68959a452.setIcon(icon_c8384a7db7fa966acfccd82902fe84f8);
+        
+    
+        var popup_af0fa4e21f259c717bf0a5463273101d = L.popup({"maxWidth": 200, "minWidth": 200});
+
+        
+            
+                var i_frame_5715b72a1d0643a0eb17e40bf241a730 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBBQkMsIEtpdmlzdMO2bnRpZSAzMDxicj48YnI+OTVFMTA6Jm5ic3A7Mi4wNjY8YnI+OThFOiZlbXNwOyZuYnNwOzIuMTUxPGJyPkRpOiZlbXNwOyZlbnNwOyZuYnNwOzIuMDk1" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_af0fa4e21f259c717bf0a5463273101d.setContent(i_frame_5715b72a1d0643a0eb17e40bf241a730);
+            
+        
+
+        marker_5a523b6d0ec30f85a57962b68959a452.bindPopup(popup_af0fa4e21f259c717bf0a5463273101d)
+        ;
+
+        
+    
+    
+            marker_5a523b6d0ec30f85a57962b68959a452.bindTooltip(
+                `<div>
+                     <b>ABC</b> Kivistöntie 30, 60100 Seinäjoki, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d765ff93ed637516765c5964624060c = L.marker(
+                [62.8045803, 22.8803289],
+                {}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var icon_1a8dab3d122b744abe88fc1f9b4f5b5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_0d765ff93ed637516765c5964624060c.setIcon(icon_1a8dab3d122b744abe88fc1f9b4f5b5d);
+        
+    
+        var popup_309e3f2711e6941a66d0942bf7ea0839 = L.popup({"maxWidth": 200, "minWidth": 200});
+
+        
+            
+                var i_frame_230cd39f2c3dfb15a237bafed115df5f = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBBQkMsIEh5bGx5a2FsbGlvbnRpZSAyPGJyPjxicj45NUUxMDombmJzcDsyLjA3NTxicj45OEU6JmVtc3A7Jm5ic3A7Mi4xNjg8YnI+RGk6JmVtc3A7JmVuc3A7Jm5ic3A7Mi4xMDQ=" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_309e3f2711e6941a66d0942bf7ea0839.setContent(i_frame_230cd39f2c3dfb15a237bafed115df5f);
+            
+        
+
+        marker_0d765ff93ed637516765c5964624060c.bindPopup(popup_309e3f2711e6941a66d0942bf7ea0839)
+        ;
+
+        
+    
+    
+            marker_0d765ff93ed637516765c5964624060c.bindTooltip(
+                `<div>
+                     <b>ABC</b> Hyllykalliontie 2, 60510 Seinäjoki, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_24bee0d02cf46d8dafaa7ce4e38ce051 = L.marker(
+                [62.7980914, 22.8600159],
+                {}
+            ).addTo(map_dd78716584c63811534599b1b161afec);
+        
+    
+            var icon_55228f829318e11f8f2064642cc0294d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_24bee0d02cf46d8dafaa7ce4e38ce051.setIcon(icon_55228f829318e11f8f2064642cc0294d);
+        
+    
+        var popup_ab48985bade5ec76186a8adc95440f8b = L.popup({"maxWidth": 200, "minWidth": 200});
+
+        
+            
+                var i_frame_1d969a33a20ed8883765f36fc47975d9 = $(`<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><iframe src="data:text/html;charset=utf-8;base64,CiAgICBTdDEsIFDDpGl2w7Zsw6Rua2F0dSAzOTxicj48YnI+OTVFMTA6Jm5ic3A7Mi4wNTY8YnI+OThFOiZlbXNwOyZuYnNwOzIuMTQ2PGJyPkRpOiZlbXNwOyZlbnNwOyZuYnNwOzIuMDgz" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;"></iframe></div></div>`)[0];
+                popup_ab48985bade5ec76186a8adc95440f8b.setContent(i_frame_1d969a33a20ed8883765f36fc47975d9);
+            
+        
+
+        marker_24bee0d02cf46d8dafaa7ce4e38ce051.bindPopup(popup_ab48985bade5ec76186a8adc95440f8b)
+        ;
+
+        
+    
+    
+            marker_24bee0d02cf46d8dafaa7ce4e38ce051.bindTooltip(
+                `<div>
+                     <b>St1</b> Päivölänkatu 39, 60120 Seinäjoki, Finland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
