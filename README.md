@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/691898018.svg)](https://zenodo.org/badge/latestdoi/691898018)
+
 ![kuva](/images/tosipaikka_logot.png)
 
 # TosiPaikka - GIS-työkalut
